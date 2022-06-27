@@ -23,19 +23,19 @@
     fill: #AFB1B8;
     background-color: var(--primary-color);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
 }
 
 .castomers-list-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.castomers-list-item-link:hover .castomers-list-icon,
-.castomers-list-item-link:focus .castomers-list-icon {
-    fill: var(--accent-color);
-}
-
-.castomers-list-item-link:hover,
-.castomers-list-item-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+    .castomers-list-item-link:hover &,
+    .castomers-list-item-link:focus & {
+        fill: var(--accent-color);
+    }
 }

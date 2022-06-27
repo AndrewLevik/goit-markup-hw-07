@@ -7,6 +7,10 @@
 @import './base/title';
 
 @import './components/logo';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-contact-form';
+
 
 @import './layout/header';
 @import './layout/hero';
@@ -14,6 +18,5 @@
 @import './layout/our-works';
 @import './layout/employees';
 @import './layout/regular-castomers';
-
-
-
+@import './layout/footer';
+@import './layout/portfolio';
