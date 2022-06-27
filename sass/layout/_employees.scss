@@ -33,15 +33,15 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-}
-
-.our-team-card:not(:last-child) {
-    margin-right: 30px;
 }
 
 .social-list {
@@ -50,9 +50,7 @@
 }
 
 .social-list-item-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -68,8 +66,7 @@
     &:hover .social-list-icon,
     &:focus .social-list-icon {
     fill: var(--primary-color);
-
-}
+    }
 }
 
 .social-list-item:not(:last-child) {

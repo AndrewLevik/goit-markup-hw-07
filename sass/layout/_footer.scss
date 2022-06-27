@@ -9,6 +9,10 @@ address {
     padding-bottom: 60px;
 }
 
+.contact-footer {
+    margin-top: 20px;
+}
+
 .contact-footer-address {
     font-size: 14px;
     line-height: 1.71;
@@ -81,9 +85,7 @@ address {
 }
 
 .social-list-item-link-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -147,8 +149,6 @@ address {
     margin-right: 12px;
 }
 
-
-
 .footer-form-button {
     display: inline-flex;
     align-items: center;
@@ -174,8 +174,6 @@ address {
         background-color: #188CE8;
     }
 }
-
-
 
 .footer-form-submit-icon {
     margin-left: 10px;
