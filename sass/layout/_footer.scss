@@ -13,7 +13,7 @@ address {
     margin-top: 20px;
 }
 
-.contact-footer-address {
+.contact-footer__address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -26,7 +26,7 @@ address {
     }
 }
 
-.contact-footer-mail {
+.contact-footer__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -39,20 +39,7 @@ address {
     }
 }
 
-.contact-footer-phone {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF60;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-
-.contact-footer-item:not(:last-child) {
+.contact-footer__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -79,12 +66,12 @@ address {
     color: var(--primary-color);
 }
 
-.social-list-footer {
+.socials__footer {
     display: flex;
     justify-content: center;
 }
 
-.social-list-item-link-footer {
+.socials__link-footer {
     @extend %align;
     width: 44px;
     height: 44px;
@@ -99,15 +86,15 @@ address {
     }
 }
 
-.social-list-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-list-icon {
+.socials__icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .social-list-item-link-footer:hover &,
-    .social-list-item-link-footer:focus & {
+    .socials__link-footer:hover &,
+    .socials__link-footer:focus & {
     fill: var(--primary-color);
     }
 }

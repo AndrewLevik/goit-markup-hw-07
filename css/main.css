@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-.modal-close-btn, .modal-form-checkbox-label, .our-works-overlay, .social-list-item-link, .castomers-list-item-link, .social-list-item-link-footer {
+.modal-close-btn, .modal-form-checkbox-label, .services__overlay, .socials__link, .customers__link, .socials__link-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,7 @@ body {
   color: var(--accent-color);
 }
 
-.black {
+.logo__black {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -306,7 +306,7 @@ body {
   background-color: #188CE8;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -328,7 +328,7 @@ body {
   margin-left: auto;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -357,11 +357,11 @@ body {
   color: var(--accent-color);
 }
 
-.menu .menu__link.current {
+.menu .menu__link.menu__link-current {
   color: var(--accent-color);
 }
 
-.menu__link.current::after {
+.menu__link.menu__link-current::after {
   content: '';
   display: block;
   width: 100%;
@@ -372,8 +372,7 @@ body {
   background-color: #2196F3;
 }
 
-.contact-header__phone,
-.contact-header__mail {
+.contact-header__link {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -384,23 +383,19 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-header__phone:hover,
-.contact-header__phone:focus,
-.contact-header__mail:hover,
-.contact-header__mail:focus {
+.contact-header__link:hover,
+.contact-header__link:focus {
   color: var(--accent-color);
 }
 
-.icon-adress {
+.contact-header__icon {
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-header__phone:hover .icon-adress,
-.contact-header__phone:focus .icon-adress,
-.contact-header__mail:hover .icon-adress,
-.contact-header__mail:focus .icon-adress {
+.contact-header__link:hover .contact-header__icon,
+.contact-header__link:focus .contact-header__icon {
   fill: var(--accent-color);
 }
 
@@ -439,7 +434,7 @@ body {
   text-align: center;
 }
 
-.main-title {
+.hero__title {
   width: 696px;
   height: 120px;
   font-weight: 900;
@@ -454,7 +449,7 @@ body {
   margin-bottom: 30px;
 }
 
-.benefit-title {
+.benefit__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -465,22 +460,22 @@ body {
   margin-top: 30px;
 }
 
-.benefit-description {
+.benefit__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
 
-.benefit-list {
+.benefit__list {
   display: flex;
 }
 
-.benefit-list-item:not(:last-child) {
+.benefit__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.icon-benefit {
+.benefit__image {
   width: 270px;
   height: 120px;
   display: flex;
@@ -490,19 +485,19 @@ body {
   background-color: #F5F4FA;
 }
 
-.our-works {
+.service {
   padding-top: 0px;
 }
 
-.our-works-card {
+.services__card {
   position: relative;
 }
 
-.our-works-card:not(:last-child) {
+.services__card:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-works-overlay {
+.services__overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -516,12 +511,12 @@ body {
   color: #FFFFFF;
 }
 
-.works {
+.services {
   display: flex;
   flex-wrap: wrap;
 }
 
-.our-team-title {
+.employees__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -531,12 +526,12 @@ body {
   margin-bottom: 10px;
 }
 
-.our-team-content {
+.employees__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.our-team-description {
+.employees__description {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -545,31 +540,31 @@ body {
   margin-bottom: 16px;
 }
 
-.our-team {
+.employees {
   background-color: #F5F4FA;
 }
 
-.our-team-card {
+.employees__item {
   background-color: var(--primary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-card:not(:last-child) {
+.employees__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.cards {
+.employees__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.social-list {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.social-list-item-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -578,34 +573,34 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item-link:hover, .social-list-item-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-list-item-link:hover .social-list-icon,
-.social-list-item-link:focus .social-list-icon {
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
   fill: var(--primary-color);
 }
 
-.social-list-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.castomers-list {
+.customers__list {
   display: flex;
   justify-content: center;
 }
 
-.castomers-list-item {
+.customers__item {
   width: 170px;
   height: 92px;
 }
 
-.castomers-list-item:not(:last-child) {
+.customers__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.castomers-list-item-link {
+.customers__link {
   width: 100%;
   height: 100%;
   border: 1px solid #AFB1B8;
@@ -615,17 +610,17 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.castomers-list-item-link:hover, .castomers-list-item-link:focus {
+.customers__link:hover, .customers__link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.castomers-list-icon {
+.customers__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.castomers-list-item-link:hover .castomers-list-icon,
-.castomers-list-item-link:focus .castomers-list-icon {
+.customers__link:hover .customers__icon,
+.customers__link:focus .customers__icon {
   fill: var(--accent-color);
 }
 
@@ -644,7 +639,7 @@ address {
   margin-top: 20px;
 }
 
-.contact-footer-address {
+.contact-footer__address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -652,11 +647,11 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer-address:hover, .contact-footer-address:focus {
+.contact-footer__address:hover, .contact-footer__address:focus {
   color: var(--accent-color);
 }
 
-.contact-footer-mail {
+.contact-footer__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -664,23 +659,11 @@ address {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-footer-mail:hover, .contact-footer-mail:focus {
+.contact-footer__link:hover, .contact-footer__link:focus {
   color: var(--accent-color);
 }
 
-.contact-footer-phone {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #FFFFFF60;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-footer-phone:hover, .contact-footer-phone:focus {
-  color: var(--accent-color);
-}
-
-.contact-footer-item:not(:last-child) {
+.contact-footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -707,12 +690,12 @@ address {
   color: var(--primary-color);
 }
 
-.social-list-footer {
+.socials__footer {
   display: flex;
   justify-content: center;
 }
 
-.social-list-item-link-footer {
+.socials__link-footer {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -721,20 +704,20 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item-link-footer:hover, .social-list-item-link-footer:focus {
+.socials__link-footer:hover, .socials__link-footer:focus {
   background-color: var(--accent-color);
 }
 
-.social-list-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-list-icon {
+.socials__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item-link-footer:hover .social-list-icon,
-.social-list-item-link-footer:focus .social-list-icon {
+.socials__link-footer:hover .socials__icon,
+.socials__link-footer:focus .socials__icon {
   fill: var(--primary-color);
 }
 
@@ -803,7 +786,7 @@ address {
   margin-left: 10px;
 }
 
-.navigation-list {
+.navigation {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
@@ -814,7 +797,7 @@ address {
   padding-bottom: 94px;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -840,29 +823,29 @@ address {
   border-radius: 4px;
 }
 
-.project-list {
+.projects {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-list-item:not(:nth-child(3n)) {
+.projects__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.project-list-item:nth-child(-n+6) {
+.projects__item:nth-child(-n+6) {
   margin-bottom: 30px;
 }
 
-.project-list-item-link {
+.projects__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-list-item-link:hover, .project-list-item-link:focus {
+.projects__link:hover, .projects__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-list-content {
+.projects__content {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -871,7 +854,7 @@ address {
   border-top: none;
 }
 
-.project-title {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.0;
@@ -880,19 +863,19 @@ address {
   margin-bottom: 4px;
 }
 
-.project-description {
+.projects__description {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }
 
-.project-list-img-wrapper {
+.projects__wrapper {
   position: relative;
   overflow: hidden;
 }
 
-.project-list-overlay {
+.projects__overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -911,8 +894,8 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-list-item-link:hover .project-list-overlay,
-.project-list-item-link:focus .project-list-overlay {
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
   transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

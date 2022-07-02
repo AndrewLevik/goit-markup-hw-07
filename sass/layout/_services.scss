@@ -1,8 +1,8 @@
-.our-works {
+.service {
     padding-top: 0px;
 }
 
-.our-works-card {
+.services__card {
     position: relative;
 
     &:not(:last-child) {
@@ -10,7 +10,7 @@
     }
 }
 
-.our-works-overlay {
+.services__overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -26,7 +26,7 @@
     color: #FFFFFF;
 }
 
-.works {
+.services {
     display: flex;
     flex-wrap: wrap;
 }

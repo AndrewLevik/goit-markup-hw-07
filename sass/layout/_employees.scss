@@ -1,4 +1,4 @@
-.our-team-title {
+.employees__title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -9,12 +9,12 @@
     margin-bottom: 10px;
 }
 
-.our-team-content {
+.employees__content {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.our-team-description {
+.employees__description {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -23,11 +23,11 @@
     margin-bottom: 16px;
 }
 
-.our-team {
+.employees {
     background-color: #F5F4FA;
 }
 
-.our-team-card {
+.employees__item {
     background-color: var(--primary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -39,17 +39,17 @@
     }
 }
 
-.cards {
+.employees__list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.social-list {
+.socials {
     display: flex;
     justify-content: center;
 }
 
-.social-list-item-link {
+.socials__link {
     @extend %align;
     width: 44px;
     height: 44px;
@@ -63,12 +63,12 @@
         background-color: var(--accent-color);
     }
 
-    &:hover .social-list-icon,
-    &:focus .social-list-icon {
+    &:hover .socials__icon,
+    &:focus .socials__icon {
     fill: var(--primary-color);
     }
 }
 
-.social-list-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
 }

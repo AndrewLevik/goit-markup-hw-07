@@ -1,4 +1,4 @@
-.benefit-title {
+.benefit__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -9,22 +9,22 @@
     margin-top: 30px;
 }
 
-.benefit-description {
+.benefit__description {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
 }
 
-.benefit-list {
+.benefit__list {
     display: flex;
 }
 
-.benefit-list-item:not(:last-child) {
+.benefit__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.icon-benefit {
+.benefit__image {
     width: 270px;
     height: 120px;
     display: flex;
